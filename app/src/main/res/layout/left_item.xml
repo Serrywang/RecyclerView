@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/girl"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/titleTips"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/title_tips"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/ImageView"
+
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u597d\u5947\u5fc3\u65e5\u62a5"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/titleTips"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/Id_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Id_tips"
+        android:layout_toRightOf="@+id/ImageView"
+
+        android:textColor="@color/black"
+
+        android:textStyle="bold"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Id_tips"
+        android:layout_alignBottom="@+id/Id_tips"
+        android:layout_centerVertical="true"
+        android:text="engadget"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+    <TextView
+        android:id="@+id/createTips"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/create_at"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/ImageView"
+        android:layout_alignBottom="@+id/ImageView"
+        />
+    <TextView
+        android:id="@+id/createTimeTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/createTips"
+        android:layout_alignBottom="@+id/createTips"
+        android:text="2016-11-14T21:35:12.685Z"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+</RelativeLayout>
